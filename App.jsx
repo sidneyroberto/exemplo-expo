@@ -22,7 +22,7 @@ const App = () => {
         <TextInput
           placeholder='Digite uma frase'
           onChangeText={countWords}
-          style={styles.messageInput}
+          style={styles.sentenceInput}
         />
         <Text> {`Quantidade palavras: ${numberOfWords}`} </Text>
       </View>
@@ -32,14 +32,14 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
   },
-  messageInput: {
+  sentenceInput: {
     borderWidth: 2,
     height: 40,
     width: 250,
     textAlign: 'center',
+    marginBottom: 20,
   },
 })
 
